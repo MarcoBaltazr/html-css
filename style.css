@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(fonts/idroid.otf) format(truetype);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'idroid', sans-serif; /* Correção aqui */
+}
+body {
+    font-family: var(--fonte0);
+    line-height: 1.5;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    margin: 0;
+    padding: 0;
+}
+#titulo-principal {
+    background-color: #1A5C37;
+    color: #c5ebd6;
+    text-align: center;
+    font-family: var(--fonte1);
+    padding: 40px;
+    font-size: 50px;
+}
+header {
+    background-color: #1A5C37;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+nav {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin-top: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: var(--cor4); 
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #063d1e;
+}
+h1 {
+    font-family: var(--fonte2);
+    font-size: 2em;
+}
+main {
+    background-color: #c5ebd6;
+    width: 55%;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+    color: #063d1e;
+    padding: 1em;
+}
+h2 {
+    font-family: var(--fonte2);
+    background-color: var(--cor2);
+}
+.container {
+    text-align: center;
+}
+.paragrafo {
+    text-indent: 20px;
+}
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+    padding-top: 56.25%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left:  5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 1em;
+}
+aside h4 {
+    background-color: var(--cor4);
+    color: #c5ebd6;
+    border-radius: 10px 10px 0 0;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+ul {
+    list-style-type: none;
+    columns: 2;
+    list-style-position: inside;
+}
+ul li::before {
+    content: '\2714';
+    margin-right: 10px;
+}
+.link:hover {
+    background-color: #3DDC84;
+    color: #063d1e;
+}
+footer {
+    text-align: center;
+    background-color: #063d1e;
+    color: #c5ebd6;
+    font-size: 0.7em;
+    padding: 1em;
+}
